@@ -83,6 +83,7 @@ export class AppService {
         data.comments_url,
       );
 
+      // check if the response gives an empty array
       if (lastAndSecondToLastURL.length === 0) {
         const formattedObj: URLInfo = {
           repoURL: data.url,
@@ -92,8 +93,6 @@ export class AppService {
         thirdCSVFileObject.push(formattedObj);
       }
     }
-
-    console.log('thirdCSVFileObject', thirdCSVFileObject);
 
     return this.fileService.writeToACSVfile(
       'thirdCSVFileObject',
