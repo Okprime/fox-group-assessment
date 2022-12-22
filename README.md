@@ -8,8 +8,6 @@
 git clone https://github.com/Okprime/fox-group-assessment.git
 ```
 
-## Installing Without Docker
-
 2. Install dependencies with this command
 ```bash
 npm install
@@ -19,6 +17,9 @@ npm install
 ```bash
 npm run start:dev
 
+
+## Run the application in the without-framework folder
+node without-framework/index.js
 
 ## API
 http://localhost:<PORT>/generate-csv
